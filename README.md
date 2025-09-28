@@ -238,9 +238,14 @@ module load craype-accel-amd-gfx90a
 ```
 
 #### Jupyter visible to conda 
-```
+
 https://docs.olcf.ornl.gov/software/python/jupyter_envs.html
-```
+
+
+#### Jupyter Lab Session 
+
+https://docs.olcf.ornl.gov/services_and_applications/jupyter/overview.html
+
 
 ## Container (Apptainer) 
 
