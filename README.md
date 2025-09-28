@@ -311,6 +311,12 @@ Check the Slurm account (account# is projID)
 sacctmgr show assoc user=$USER
 ```
 
+Update the access time of all files in the current and recursive subdirectories in Lustre (Purged every 90 days) to avoid purged  
+
+```
+find . -type f -print0 | xargs -0 touch -a -r .
+```
+
 
 
 
