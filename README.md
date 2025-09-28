@@ -32,9 +32,9 @@ There are guides for other systems as well
 
 ##  SSH access (token required)
 
-- userid/username (e.g., guoj5)
-- projid (e.g,. csc662)
-- PIN code (e.g., 1210)
+- userid/username
+- projid
+- PIN code 
 
 - Passcode: **PIN** then enter **token code**; Wait for it to change and then do the thing above again 
 
@@ -294,28 +294,6 @@ check the `srun` commands in [document link](https://docs.olcf.ornl.gov/systems/
 
 https://my.olcf.ornl.gov/script-generator
 
-my-test 
-```
-#!/bin/bash
-#SBATCH -A CSC662
-#SBATCH -J test-job
-#SBATCH -o %x-%j.out 
-#SBATCH -e %x-%j.err 
-#SBATCH -N 4
-#SBATCH -t 02:00:00
-#SBATCH -p batch
-#SBATCH -q normal
-#SBATCH --threads-per-core=1
-#SBATCH --mail-user=junlin.guo@vanderbilt.edu
-#SBATCH --mail-type=ALL
-
-#OpenMP settings:
-export OMP_NUM_THREADS=7
-
-#run the application:
-srun -n 32 -c 7 --gpus-per-task=1 --gpu-bind=closest --threads-per-core=1 test.py
-
-```
 
 ## other references 
 
