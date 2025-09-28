@@ -15,3 +15,8 @@ conda create -p /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.
 
 source activate /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.conda/frontier/dino_env
 ```
+
+## install pytorch (ROCM) 
+```
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/rocm6.3
+```
