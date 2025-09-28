@@ -1,5 +1,6 @@
-Install Pytorch Env Notes
-# Install/Reproduce dinov2 ssl / deepAndes env
+Create a conda env and install pytorch on frontier hpc (Notes) 
+
+> Install/Reproduce dinov2 ssl / deepAndes env
 
 ## load environment module 
 ```
@@ -20,3 +21,12 @@ source activate /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.
 ```
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/rocm6.3
 ```
+test installation 
+```
+import torch
+print(torch.cuda.is_available())
+print(torch.__version__)
+```
+
+## install dinov2 paper / deepandes paper related packages 
+[dinov2_install_readme](https://github.com/geopacha/DeepAndes/blob/main/dinov2_ssl_8bands/README(from%20dinov2%20original%20repo).md)
