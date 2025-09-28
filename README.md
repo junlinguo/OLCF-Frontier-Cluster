@@ -277,7 +277,7 @@ sbatch --export=NONE xxx.sbatch
 ```
 
 
-## notes (for myself, Important) 
+## notes (for myself) 
 
 dinov2 paper uses 4 A100-80GB Nodes with 32 GPUs. An example implementation for reference. (https://github.com/facebookresearch/dinov2/blob/main/dinov2/utils/cluster.py#L74) Some settings considered.  
 ```
