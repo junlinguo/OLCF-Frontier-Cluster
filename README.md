@@ -98,8 +98,6 @@ Click connect
 
 (3) Select files, Choose local and remote destination path. Hit 'Start' 
 
-![image-20250911113032700](/Users/ezralinn/Library/Application Support/typora-user-images/image-20250911113032700.png)
-
 More Details/Methods from [Data Transfer Nodes (DTNs) guide](https://docs.olcf.ornl.gov/systems/dtn_user_guide.html)
 
 
