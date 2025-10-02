@@ -229,11 +229,12 @@ $ source activate /ccs/proj/<<your_project_id>>/<<your_user_id>>/.conda/frontier
 #### Load environmental variables  (e.g., first_torch) (before activate conda env) 
 ```
 module load PrgEnv-gnu/8.6.0
-module load miniforge3/23.11.0-0 (only load once) 
+module load miniforge3/23.11.0-0 
 module load rocm/6.3.1
 module load craype-accel-amd-gfx90a
 
 ```
+only load miniforge3 once for each session. 
 
 #### Jupyter visible to conda 
 
