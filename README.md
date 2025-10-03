@@ -304,12 +304,23 @@ https://my.olcf.ornl.gov/script-generator
 why use a cluster ? [reference](https://epcced.github.io/hpc-intro/aio.html)
 Slurm (from training arxiv: [link](https://vimeo.com/828638016?turnstile=0.iVjfNejc-IMwigFqG-tcRjBQtu3zeuqQpIp3qvzaUNAymV53bjHfK7eqxJxySuNHCkaBeEsX0ywLlkc8CFrOXmkIpfyC_gGqWh2ypCZBVmPyUEw-CJdVZXkNY6NQY__S77Vg9YUnQQfQ4uP2NbpuvjZafDkiAiF-6S3DjwUJ3fxVwnJT822JJiN5xCPnxowIHZfWaLlkSReQ37HcLZ1YAnF2c1iQZjMbJWEd5gLjazmvg6Fo-Vp6SYK1erarKyAfnyW193QFP8KPbEoBX9h0Dqgxbvdd0x5h5b2sLLoV1JIg_YCt4tu3Ot1eDI8RxGSuYMT41p-WdGgQ9lFsUbkBaD-ageF81WoZxovvfWRFHTTZ7SdhiY9Fjlkn0CaorqUe8uBVb3S8NWmBygV4BkUoiOdmh_IQ5Vwz2Q1H8RGu8EYs7G65CXJNRx0FSA_Kss24LFVQNfAvkJBDzxxmxbvFe0-M8lHTT8tD-7ddTqlpQ7JnsatWZwxXB7r49Tp0m3KDhEybCDwNFuIX2U4Q8GIOUr8qEcJmoQXgVNvm48NHMNq6hMd4VWxUrDRKPRn8Zhs1G8tAiFC92TyHeIcBVCDSXUu3Rv2z3qiUl8qNsvJJ5BpwefAIiwSHZQJhhz-P2XMcitXQgfCq9SADkH7nWnGYZ__DT3qU0yr4GcAMLoDsLyQ-2Var-ln-noanv_Jt9Q3TBNIoMvhzX86BJAn_AFRjMn1RkMRvc4Q_UJR2dh1WXSmKqXc3vo3_MWFDtIbErX6ZMh9Tlza8VlDwgqgjhTooFZg0U8M1B2BedRCqA78PFL2oONFGJ8WduWSIn9Mr9OEFetUavp-aBnYYDD8eJzTDWG6dS7OaQjx_9mZ2ptgan8aguoHsumksJsAKNH-u3ZEWsU-4lptg_QAPuec_pWLte5lYVTtmczNsEyCY6HxXIjwJWS_BCocL4GeHWVTHekhQ.9GXLSvqOeyawdE7prfgALQ.b0982fb308f65af22399f3192fbeecf0e2c6d66270315487410e0b4955886a12), [slides](https://www.olcf.ornl.gov/wp-content/uploads/2023_05_18_slurm_on_frontier.pdf))
 
-
+### SLURM Commands
 Check the Slurm account (account# is projID)
 ```
 sacctmgr show assoc user=$USER
 ```
 
+Check User jobs 
+```
+squeue -u $USER
+```
+
+Check run time / start time 
+```
+scontrol show job <jobid> | grep -E "(TimeLimit|RunTime|StartTime)"
+```
+
+### Update Access Time
 Update the access time of all files in the current and recursive subdirectories in Lustre (Purged every 90 days) to avoid purged  
 
 ```
