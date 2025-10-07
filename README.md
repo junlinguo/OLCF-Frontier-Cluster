@@ -195,7 +195,6 @@ ls
 
 need to check that: do not load miniforge twice !!! 
 
-![image-20250911120200888](/Users/ezralinn/Library/Application Support/typora-user-images/image-20250911120200888.png)
 
 [Guide](https://docs.olcf.ornl.gov/software/python/index.html#python-on-olcf-systems)
 
