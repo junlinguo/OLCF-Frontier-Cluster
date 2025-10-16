@@ -76,6 +76,11 @@ Example usage of `scp` image.TIF from kronos dtn to orion member work
 cd /nl/kronos/olcf/[projid]/users/[userid]
 scp image.TIF <userid>@frontier.olcf.ornl.gov:/lustre/orion/[projid]/scratch/[userid]
 ```
+Example usage of `rsync`, it is fast and can keep transfer the partially/imcompleted files 
+
+```
+rsync -avP /path/to/local_folder/ user@remote:/path/to/destination/
+```
 
 
 
