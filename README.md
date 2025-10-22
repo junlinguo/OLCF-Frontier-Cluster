@@ -79,7 +79,7 @@ scp image.TIF <userid>@frontier.olcf.ornl.gov:/lustre/orion/[projid]/scratch/[us
 Example usage of `rsync`, it is fast and can keep transfer the partially/imcompleted files 
 
 ```
-rsync -avP /path/to/local_folder/ user@remote:/path/to/destination/
+rsync -avP /path/to/local_folder/ user@remote:/path/to/destination/folder/
 ```
 
 
