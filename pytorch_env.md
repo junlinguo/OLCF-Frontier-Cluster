@@ -32,6 +32,14 @@ print(torch.cuda.is_available())
 print(torch.__version__)
 ```
 
+## Jupyter visible to conda
+
+https://docs.olcf.ornl.gov/software/python/jupyter_envs.html
+```
+pip install ipykernel
+ipython kernel install --user --name=jupyter_env_frontier
+```
+
 ## install dinov2 paper / deepandes paper related packages 
 [dinov2_install_readme](https://github.com/geopacha/DeepAndes/blob/main/dinov2_ssl_8bands/README(from%20dinov2%20original%20repo).md)
 
