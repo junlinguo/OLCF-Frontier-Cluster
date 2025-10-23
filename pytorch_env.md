@@ -16,6 +16,9 @@ for every session, only load miniforge3 once
 conda create -p /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.conda/frontier/dino_env python=3.12 -c conda-forge
 
 source activate /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.conda/frontier/dino_env
+
+# deactivate
+source deactivate /lustre/orion/<<your_project_id>>/proj-shared/<<your_user_id>>/.conda/frontier/dino_env
 ```
 
 ## install pytorch (ROCM) 
