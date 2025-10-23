@@ -31,3 +31,4 @@ print(torch.__version__)
 
 ## install dinov2 paper / deepandes paper related packages 
 [dinov2_install_readme](https://github.com/geopacha/DeepAndes/blob/main/dinov2_ssl_8bands/README(from%20dinov2%20original%20repo).md)
+[deepandes install readme](https://github.com/geopacha/DeepAndes/tree/main/dinov2_ssl_8bands/README.md)
