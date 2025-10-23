@@ -243,6 +243,10 @@ only load miniforge3 once for each session.
 #### Jupyter visible to conda 
 
 https://docs.olcf.ornl.gov/software/python/jupyter_envs.html
+```
+pip install ipykernel
+ipython kernel install --user --name=jupyter_env_frontier
+```
 
 
 #### Jupyter Lab Session 
