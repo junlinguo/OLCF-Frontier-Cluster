@@ -328,13 +328,16 @@ Check run time / start time
 scontrol show job <jobid> | grep -E "(TimeLimit|RunTime|StartTime)"
 ```
 
-### Update Access Time
+### Update File Access Time (Avoid Purged!!!)
 Update the access time of all files in the current and recursive subdirectories in Lustre (Purged every 90 days) to avoid purged  
 
 ```
 find . -type f -print0 | xargs -0 touch -a -r .
 ```
-
+Check the last time `filename` accessed 
+```bash
+ls -lu filename
+```
 
 
 
