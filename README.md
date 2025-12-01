@@ -266,6 +266,19 @@ submitting job example (<ins> 56' at the video guide zoom recording </ins>)
 
 Documentation: https://docs.olcf.ornl.gov/systems/frontier_user_guide.html#running-jobs
 
+### Walltime (for normal "batch" partition)
+(check using the ["script generator](https://my.olcf.ornl.gov/script-generator)
+| Bin | Node-count range    | Max walltime (h)                      |
+| --- | ------------------- | ------------------------------------- |
+| 1   | 5,645 – 9,472 nodes | 12.0 h  |
+| 2   | 1,882 – 5,644 nodes | 12.0 h  |
+| 3   | 184 – 1,881 nodes   | 12.0 h |
+| 4   | 92 – 183 nodes      | 6.0 h   |
+| 5   | 1 – 91 nodes        | 2.0 h   |
+
+[1]: https://docs.olcf.ornl.gov/systems/frontier_user_guide.html?utm_source=chatgpt.com "Frontier User Guide"
+
+
 
 ## Allocate a compute node (interactive) 
 ```
