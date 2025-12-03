@@ -1,15 +1,15 @@
-Create a conda env and install pytorch on frontier hpc (Notes) 
+Conda Environment Setup in HPC Cluster (Frontier)
 
 > Install/Reproduce dinov2 ssl / deepAndes env
 
-## load environment module 
+## module load environment vars 
 ```
 module load PrgEnv-gnu/8.6.0
 module load miniforge3/23.11.0-0 
 module load rocm/6.3.1
 module load craype-accel-amd-gfx90a
 ```
-for every session, only load miniforge3 once
+**For every bash/shell session, only load miniforge3 once, which will initialize conda `base`**.
 
 ## create conda env (could be other virtual env too)
 ```
