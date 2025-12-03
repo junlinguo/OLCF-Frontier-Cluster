@@ -2,6 +2,8 @@ Conda Environment Setup in HPC Cluster (Frontier)
 
 > Install/Reproduce dinov2 ssl / deepAndes env
 
+> An conda env backup at /lustre/orion/csc662/proj-shared/zimmejr1/.conda/frontier_lustre/dino_env_clone
+
 ## module load environment vars 
 ```
 module load PrgEnv-gnu/8.6.0
@@ -40,7 +42,26 @@ pip install ipykernel
 ipython kernel install --user --name=jupyter_env_frontier
 ```
 
-## install dinov2 paper / deepandes paper related packages 
-[dinov2_install_readme](https://github.com/geopacha/DeepAndes/blob/main/dinov2_ssl_8bands/README(from%20dinov2%20original%20repo).md)
+## install remaining dinov2 paper / deepandes paper related packages 
+- [dinov2_install_readme](https://github.com/geopacha/DeepAndes/blob/main/dinov2_ssl_8bands/README(from%20dinov2%20original%20repo).md)
 
-[deepandes install readme](https://github.com/geopacha/DeepAndes/tree/main/dinov2_ssl_8bands/README.md)
+- [deepandes install readme](https://github.com/geopacha/DeepAndes/tree/main/dinov2_ssl_8bands/README.md)
+
+Modify for the HPC Frontier install: 
+
+```bash
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/rocm6.3
+pip install omegaconf
+pip install torchmetrics
+pip install fvcore
+pip install iopath
+
+pip install opencv-python
+```
+The transforms based on albumentations < v2.0 
+```bash
+pip install albumentations==1.4.0 
+```
+Not install the `wandb`, it caused the timeout internet access error. 
+
+
