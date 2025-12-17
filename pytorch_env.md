@@ -64,4 +64,10 @@ pip install albumentations==1.4.0
 ```
 Not install the `wandb`, it caused the timeout internet access error. 
 
+Instead: Directly print the output metrics during pretraining 
+```bash
+watch -n 3 'tail -n 2 training_metrics.json | jq .'
+```
+
+
 
