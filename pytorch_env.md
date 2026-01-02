@@ -4,6 +4,8 @@ Conda Environment Setup in HPC Cluster (Frontier)
 
 > An conda env backup at /lustre/orion/csc662/proj-shared/zimmejr1/.conda/frontier_lustre/dino_env_clone
 
+## SSH login 
+See https://github.com/junlinguo/OLCF-Frontier-Cluster/tree/main?tab=readme-ov-file#login-to-frontier
 ## module load environment vars 
 ```
 module load PrgEnv-gnu/8.6.0
