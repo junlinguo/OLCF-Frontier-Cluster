@@ -13,6 +13,11 @@ module load miniforge3/23.11.0-0
 module load rocm/6.3.1
 module load craype-accel-amd-gfx90a
 ```
+
+To check the available environment variable (with versions), e.g., `rocm-*`:
+```
+module avail rocm
+```
 **For every bash/shell session, only load miniforge3 once, which will initialize conda `base`**.
 
 ## create conda env (could be other virtual env too)
