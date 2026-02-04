@@ -236,9 +236,8 @@ module load PrgEnv-gnu/8.6.0
 module load miniforge3/23.11.0-0 
 module load rocm/6.3.1
 module load craype-accel-amd-gfx90a
-
 ```
-only load miniforge3 once for each session. 
+only load miniforge3 once for each bash session. 
 
 #### Jupyter visible to conda 
 
@@ -283,7 +282,6 @@ check using the ["script generator"](https://my.olcf.ornl.gov/script-generator)
 ## Allocate a compute node (interactive) 
 ```
 salloc -A ProjID -t time_assign -p batch -N 1
-
 ```
 e.g., assign 1 compute node to proj CSC662 (60 mins request), default partition queque is `batch`
 ```

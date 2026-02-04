@@ -18,6 +18,14 @@ To check the available environment variable (with versions), e.g., `rocm-*`:
 ```
 module avail rocm
 ```
+
+To check the loaded enrionment variable (with versions), 
+```bash
+module list
+```
+
+
+
 **For every bash/shell session, only load miniforge3 once, which will initialize conda `base`**.
 
 ## create conda env (could be other virtual env too)
