@@ -338,6 +338,8 @@ Check run time / start time
 ```
 scontrol show job <jobid> | grep -E "(TimeLimit|RunTime|StartTime)"
 ```
+**Common SLURM OPTIONS**: 
+https://docs.olcf.ornl.gov/systems/frontier_user_guide.html#common-slurm-options
 
 ### Update File Access Time (Avoid Purged!!!)
 Update the access time of all files in the current and recursive subdirectories in Lustre (Purged every 90 days) to avoid purged  
