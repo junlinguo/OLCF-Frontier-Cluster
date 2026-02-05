@@ -338,6 +338,11 @@ Check run time / start time
 ```
 scontrol show job <jobid> | grep -E "(TimeLimit|RunTime|StartTime)"
 ```
+
+Check wait time 
+```
+squeue -j <jobid> --Format=PendingTime
+```
 **Common SLURM OPTIONS**: 
 https://docs.olcf.ornl.gov/systems/frontier_user_guide.html#common-slurm-options
 
